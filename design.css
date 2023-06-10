@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+
+
+}
+
+.logo {
+
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    color: black;
+    font-style: italic;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+nav ul li a i {
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: gray;
+    /* transition: .4s; */
+    transform: scale(1.2);
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    color: azure;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+#content {
+    /* position: absolute; */
+    top: 50%;
+    left: 8%;
+    font-size: 16px;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: black;
+    margin: 20px 0px 20px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#content {
+    margin: 160px;
+}
+
+.content-text {
+    /* font-size: 65px; */
+    line-height: 20px;
+    opacity: 1;
+    margin-top: -20px;
+    font-size: 20px;
+
+}
+
+p h1 {
+    font-size: 20px;
+    margin-top: -20px;
+    letter-spacing: 4px;
+    line-height: 10px;
+    line-break: auto;
+    word-break: break-all;
+    word-spacing: 4px;
+}
+
+.headerimg {
+    width: 100%;
+    max-width: 362px;
+    position: relative;
+    height: 50%;
+    float: right;
+    margin-top: -30%;
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 50%;
+    padding: auto;
+    right: 5%;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #content {
+        margin: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .headerimg {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        right: auto;
+    }
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+}
+
+.card {
+    height: 555px;
+    width: 395px;
+    padding: 20px 35px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.shor p {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Two columns with equal width */
+    grid-gap: 2px;
+    /* Spacing between the images */
+    margin: 50px 110px;
+
+
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 30px;
+    }
+}
+
+#footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.foot {
+    font-size: 17px;
+    color: #666666;
+    margin-top: 30px;
+}
